@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html>
-<header>
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>TvOnlineApp</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <link href="style.css"  type="text/css" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 
-</header>
+<script async="async">
+    var text = ["Peliculas", "Series", "Deportes","Eventos","PPV"];
+
+	//var i = 0;
+	//for (i = 0; i < 6; i++) {
+    //document.getElementById("textchanging").innerHTML = text[i];
+ 	//if (true) {};
+
+function rotarImagen() {
+
+	 var index=Math.floor((Math.random()*text.length));
+
+	 document.getElementById("textchanging").innerHTML = text[index];
+	//document.getElementById("imagen").src=imagenes[index][0];
+
+
+}
+onload=function(){
+	 rotarImagen();
+	 setInterval(rotarImagen,3000);
+}
+
+
+</script>
+</head>
 <body>
 
-<h1 style="font-family:verdana;">This is a heading2</h1>
+<header class="tabBar">
+
+
+        <div class="container-fluid">
+            <div align="center">
+              <img class="logo"  src="newlogo.png"  >
+            </div>
+        </div>
+
+<div class="container-fluid">
+      <div class="row">
+
+          <div class="col-sm-6">
+            <div class="intro">
+              <h1 id="intro" style="font-family: 'Roboto', sans-serif;"><span style="font-family: 'Roboto', sans-serif;   text-decoration: underline;
+             -webkit-text-decoration-color: white; /* Safari */
+             text-decoration-color: white;font-weight:bold">TvOnline</span><br>
+              La evolución de la televisión, ahora toda tu programación favorita desde tu móvil
+              <span id="textchanging" style="font-weight:bold;font-family: 'Roboto', sans-serif;"></span>
+            </h1>
+             <a href="file:///C:/Users/luispc/Desktop/websitetvonline/TvOnline.apk" class="btndonwload">Descargar APK</a>
+            </div>
+
+        </div>
+    <div class="col-sm-4">
+      <div class="fotos">
+        <img id="model"src="model.png"/>
+        <img id="model2"src="model2.png"/>
+      </div>
+
+
+    </div>
+
+   </div>
+</div>
+
+
+
+
+</header>
+
+
+
 <p style="font-family:courier;">This is a paragraph.</p>
+
+	<div class="taBBar">
+	  <div>1</div>
+	  <div>2</div>
+	  <div>3</div>
+	  <div>4</div>
+	  <div>5</div>
+	  <div>6</div>
+	  <div>7</div>
+	  <div>8</div>
+	</div>
+
+
 
 </body>
 </html>
+
