@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<title>TvOnlineApp</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/style.css"  type="text/css" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+
+<script async="async">
+    var text = ["Peliculas", "Series", "Deportes","Eventos","PPV"];
+
+	//var i = 0;
+	//for (i = 0; i < 6; i++) {
+    //document.getElementById("textchanging").innerHTML = text[i];
+ 	//if (true) {};
+
+function rotarImagen() {
+
+	 var index=Math.floor((Math.random()*text.length));
+
+	 document.getElementById("textchanging").innerHTML = text[index];
+	//document.getElementById("imagen").src=imagenes[index][0];
+
+
+}
+onload=function(){
+	 rotarImagen();
+	 setInterval(rotarImagen,3000);
+}
+
+
+</script>
+</head>
+<body>
+
+  <nav>
+                            <div class="menu-icon">
+                                  <i class="fa fa-bars fa-2x"></i>
+                            </div>
+
+                            <div class="logotipo">
+                              <img class="logo" src="imagenes/newlogowhite.png"  >
+                              <span >TvOnline</span>
+                            </div>
+
+                            <div class="menu">
+                                  <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                  </ul>
+                            </div>
+                      </nav>
+
+<div class="container-fluid" id="main" >
+  <div class="row" id="mainbg">
+    <div class="col-md-12" style="height:400px;" >
+                  <div class="intro">
+                  <h1>
+                  La evolución de la televisión, ahora toda tu programación favorita desde tu móvil
+                  <span id="textchanging" style="font-weight:bold;font-family: 'Roboto', sans-serif;"></span>
+                  </h1>
+
+                 </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section id="contenido" >
+  <div class="container" >
+    <div class="row" >
+
+
+        <div class=" col-xs-12 col-sm-6 col-md-6">
+            <p class="h1" style="text-align:center;color:white;text-shadow: 2px 2px 5px black;">CANALES</p>
+          <img class="img-fluid" src="imagenes/model.png" style=" display: block;margin-left: auto;margin-right: auto;-webkit-animation:2s rebote  infinite;
+          -moz-animation:2s rebote  infinite;
+          -ms-animation:2s rebote  infinite;
+          -o-animation:2s rebote  infinite;
+          animation:2s rebote  infinite;"/>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <p class="h1" style="text-align:center;color:white; text-shadow: 2px 2px 5px black;">PELICULAS</p>
+          <!--p class="h1" style=" line-height: 500px;text-align:center;color:white;">PELICULAS</p-->
+            <img class="img-fluid" src="imagenes/model2.png" style=" display: block;margin-left: auto;margin-right: auto;-webkit-animation:2s rebote  infinite;
+            -moz-animation:2s rebote  infinite;
+            -ms-animation:2s rebote  infinite;
+            -o-animation:2s rebote  infinite;
+            animation:2s rebote  infinite;"/>
+        </div>
+
+
+
+    </div>
+    </div>
+
+</section>
+
+<section id="descarga">
+  <div class="container-fluid" >
+  <div class="row">
+
+   <div class="col-xs-12 col-sm-3 col-md-3">
+    <img class="img-fluid" style="margin:20px 20px 20px 20px ;width:100%;display: block;margin-left: auto;margin-right: auto;" src="imagenes/newlogo.png">
+   </div>
+
+   <div class="col-xs-12 col-sm-6 col-md-6">
+    <iframe style="padding:10px;" width="100%" height="500px" src="https://www.youtube.com/embed/PQh9O_n_I8E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   </div>
+
+   <div class="col-xs-12 col-sm-3 col-md-3">
+      <a class="btn btn-primary" href="#sB" style="position:relative;left:50%;
+    	top: 50%;transform: translate(-50%,-50%);">Descargar APK</a>
+   </div>
+
+ </div>
+</div>
+
+</section>
+
+<section id="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="">
+
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+          <h4 class="h4">Siguenos</h4>
+          <a href="#"><img src="imagenes/instagram.png" alt="" style="width:10%;height:auto;"> instagram </a>
+          <a href="#"><img src="imagenes/telegram.png" alt="" style="width:10%;height:auto;"> telegram </a>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+        // Menu-toggle button
+
+        $(document).ready(function() {
+              $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+              });
+        });
+
+        // Scrolling Effect
+
+      /*  $(window).on("scroll", function() {
+              if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+              }
+
+              else {
+                    $('nav').removeClass('black');
+              }
+        })*/
+
+
+        </script>
+</body>
+</html>
